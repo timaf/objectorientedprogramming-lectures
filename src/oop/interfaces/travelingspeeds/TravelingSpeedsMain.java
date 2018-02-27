@@ -8,7 +8,6 @@ public class TravelingSpeedsMain {
         TransportationFactory factory = new TransportationFactory();
         List<Transportation> transportations = factory.getTransportations();
         transportations.forEach(e -> e.travel());
-        transportations
     }
 
 
