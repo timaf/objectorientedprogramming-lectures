@@ -1,4 +1,4 @@
-package oop.inheritance.animalstalking;
+package oop.inheritance.animalstalking.version2;
 
 public class Cat extends Pet {
 
@@ -7,12 +7,14 @@ public class Cat extends Pet {
     }
 
     @Override
-    public void talk() {
-        System.out.println("Miau!");
+    protected String getWhatThePetSays() {
+        return "MIAU!";
     }
 
     @Override
-    public String getTypeOfPet() {
+    protected String getType() {
         return "Cat";
     }
+
+
 }
